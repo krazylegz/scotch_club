@@ -1,0 +1,9 @@
+This is the website for Scotch Club. Welcome to Scotch Club!
+
+To install:
+
+1. Install Meteor (http://docs.meteor.com), currently: `curl https://install.meteor.com | /bin/sh`
+
+2. Start the server: `meteor`
+
+3. Visit the site in your browser, http://localhost:3000
