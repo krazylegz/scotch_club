@@ -1,0 +1,35 @@
+<head>
+  <title>Scotch Club</title>
+</head>
+
+<body>
+  {{> scotch_list}}
+</body>
+
+<template name="scotch_list">
+  <h1>{{greeting}}</h1>
+	<section class="scotches">
+		<header>
+			<article>
+				<h3>Distillery</h3>
+				<span class="drinkers">
+					{{#each all_drinkers}}
+						<h4>{{name}}</h4>
+					{{/each}}
+				</span>
+			</article>
+		</header>
+		{{#each scotches}}
+			{{> scotch}}
+		{{/each}}
+	</section>
+</template>
+
+<template name="scotch">
+	<article>
+		<h3>{{name}}</h3>
+		<span class="drinkers">
+			{{{drank drinkers}}}
+		</span>
+	</article>
+</template>
