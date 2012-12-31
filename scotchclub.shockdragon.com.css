@@ -4,5 +4,6 @@ section.scotches article {list-style: none; clear: both; font-weight: normal;}
 section.scotches article h3 {width: 200px; font-size: 100%; float: left; margin: 0; font-weight: normal;}
 section.scotches article h4 {width: 50px; font-size: 100%; float: left; text-align: center;}
 section.scotches header article h3, section.scotches header article h4 {font-weight: bold;}
-section.scotches article span {float: left;}
-section.scotches article span input[type="checkbox"] {width: 50px; float: left; padding-top: 7px; text-align: center;}
+section.scotches article span {float: left; padding-top: 10px;}
+section.scotches article span input[type="checkbox"] {width: 50px; float: left; text-align: center;}
+section.scotches header article span {padding-top: 0;}
