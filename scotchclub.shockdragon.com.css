@@ -6,4 +6,5 @@ section.scotches article h4 {width: 50px; font-size: 100%; float: left; text-ali
 section.scotches header article h3, section.scotches header article h4 {font-weight: bold;}
 section.scotches article span {float: left; padding-top: 10px;}
 section.scotches article span input[type="checkbox"] {width: 50px; float: left; text-align: center;}
+section.scotches article a {padding-top: 10px; display: inline-block;}
 section.scotches header article span {padding-top: 0;}
