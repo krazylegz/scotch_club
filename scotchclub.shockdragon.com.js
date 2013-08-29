@@ -13,9 +13,9 @@ if (Meteor.isClient) {
   Template.scotch_list.events({
     'click .drinkers input[type="checkbox"]' : function (e) {
 			if ($(e.currentTarget).is(':checked')) {
-				Scotches.update({name : $(e.currentTarget).parent().parent().find('h3').text()}, {$addToSet : {drinkers : $(e.currentTarget).data('drinkerName')}});
+				Scotches.update({_id : Scotches.findOne({name : $(e.currentTarget).parent().parent().find('h3').text()})['_id']}, {$addToSet : {drinkers : $(e.currentTarget).data('drinkerName')}});
 			}else{
-				Scotches.update({name : $(e.currentTarget).parent().parent().find('h3').text()}, {$pull : {drinkers : $(e.currentTarget).data('drinkerName')}});
+				Scotches.update({_id : Scotches.findOne({name : $(e.currentTarget).parent().parent().find('h3').text()})['_id']}, {$pull : {drinkers : $(e.currentTarget).data('drinkerName')}});
 			}
 		}
   });
