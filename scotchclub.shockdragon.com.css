@@ -1,5 +1,6 @@
 /* CSS declarations go here */
 h1, section.scotches {margin-left: 20px;}
+h2 {font-size: 150%; position: absolute; top: 0; right: 20px;}
 section.scotches article {list-style: none; clear: both; font-weight: normal;}
 section.scotches article h3 {width: 200px; font-size: 100%; float: left; margin: 0; font-weight: normal;}
 section.scotches article h4 {width: 50px; font-size: 100%; float: left; text-align: center;}
